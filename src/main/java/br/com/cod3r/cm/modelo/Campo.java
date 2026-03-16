@@ -94,7 +94,7 @@ public class Campo {
     boolean adicionarVizinho(Campo vizinho){
 
         boolean linhaDiferente = this.linha != vizinho.linha;
-        boolean ColunaDiferente = this.linha != vizinho.coluna;
+        boolean ColunaDiferente = this.coluna != vizinho.coluna;
         boolean diagonal = linhaDiferente && ColunaDiferente;
 
         int deltaLinha = Math.abs(linha - vizinho.linha);
